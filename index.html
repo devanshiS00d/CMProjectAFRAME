@@ -1,0 +1,271 @@
+<html></html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+        <a-scene>
+      <!-- Basic Shapes -->
+<!--       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder
+        position="1 0.75 -3"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+      ></a-cylinder> -->
+
+      <!-- Ground with grass texture -->
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="1000"
+        height="1000"
+        material="src: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF3Jee0rMNWiUYFj5Waf8vjTjLdO5YWB27Qg&s); repeat: 100 100"
+      ></a-plane>
+
+      <!-- Sky with texture -->
+      <a-sky 
+  src="url(https://t4.ftcdn.net/jpg/03/79/84/47/240_F_379844794_4zT8uTKOCukFzhHvw2sNWmm0yK2LcuTW.jpg)" 
+  radius="200" 
+  width="100" 
+  height="500" 
+  scale="0.5 0.5 0.5">
+</a-sky>
+
+      <!-- Buildings -->
+<!--       <a-box position="-10 2 -20" width="5" height="10" depth="5" color="#A9A9A9"></a-box>
+      <a-box position="5 1 -15" width="3" height="7" depth="3" color="#B22222"></a-box>
+      <a-box position="15 3 -25" width="6" height="15" depth="6" color="#4682B4"></a-box>
+      <a-box position="-5 2 -10" width="4" height="8" depth="4" color="#DAA520"></a-box>
+      <a-box position="0 1 -12" width="3" height="6" depth="3" color="#32CD32"></a-box> -->
+          
+  <!-- tree-->
+          
+      <a-cone color="green" radius-bottom="3" radius-top="0.5" height="1" position="15 2 -8"></a-cone>
+      <a-cone color="green" radius-bottom="2.5" radius-top="0.5" height="1" position="15 3 -8"></a-cone>
+      <a-cone color="green" radius-bottom="2" radius-top="0.5" height="1" position="15 4 -8"></a-cone>
+      <a-cone color="green" radius-bottom="1.5" radius-top="0.5" height="1" position="15 5 -8"></a-cone>
+      <a-cone color="green" radius-bottom="1" radius-top="0" height="1" position="15 6 -8"></a-cone>
+      <!-- stump -->
+      <a-cylinder position="15 0 -8" radius="0.75" height="3" color="#ffa200"></a-cylinder>
+     
+           
+     <a-cylinder position="8 1 -8" radius="0.3" height="2.5" color="#8B4513"></a-cylinder>
+      <a-sphere position="8 3.5 -8" radius="1" color="#48764c"></a-sphere>
+      <a-sphere position="8 4.5 -8" radius="0.7" color="#228B22"></a-sphere>
+      <a-sphere position="8 5.2 -8" radius="0.5" color="#a7cdab"></a-sphere>
+      
+      <!-- Tree 2 -->
+      <a-cylinder position="-12 1 12" radius="0.3" height="2.5" color="#8B4513"></a-cylinder>
+      <a-sphere position="-12 3.5 12" radius="1" color="#48764c"></a-sphere>
+      <a-sphere position="-12 4.5 12" radius="0.7" color="#228B22"></a-sphere>
+      <a-sphere position="-12 5.2 12" radius="0.5" color="#228B22"></a-sphere>
+
+      <!-- Tree 3 -->
+      <a-cylinder position="0 1 0" radius="0.3" height="2.5" color="#8B4513"></a-cylinder>
+      <a-sphere position="0 3.5 0" radius="1" color="#48764c"></a-sphere>
+      <a-sphere position="0 4.5 0" radius="0.7" color="#228B22"></a-sphere>
+      <a-sphere position="0 5.2 0" radius="0.5" color="#228B22"></a-sphere>
+      
+      <!-- Tree 4 -->
+      <a-cylinder position="5 1 5" radius="0.3" height="2.5" color="#8B4513"></a-cylinder>
+      <a-sphere position="5 3.5 5" radius="1" color="#48764c"></a-sphere>
+      <a-sphere position="5 4.5 5" radius="0.7" color="#228B22"></a-sphere>
+      <a-sphere position="5 5.2 5" radius="0.5" color="#228B22"></a-sphere>
+       <!-- Tree 1 (front-left corner) -->
+      <a-cylinder position="-20 1.2 -32" radius="0.3" height="2.0" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-20 3 -32" radius="0.7" color="#013220"></a-dodecahedron>
+      <a-dodecahedron position="-20 3.8 -32" radius="0.6" color="#0A3D00"></a-dodecahedron>
+
+      <!-- Tree 2 (front-right corner) -->
+      <a-cylinder position="4 1.5 -22" radius="0.25" height="2.5" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="4 3.8 -22" radius="0.8" color="#006400"></a-dodecahedron>
+      <a-dodecahedron position="4 4.6 -22" radius="0.7" color="#004C29"></a-dodecahedron>
+
+      <!-- Tree 3 (right-side border) -->
+      <a-cylinder position="4 1.0 -18" radius="0.2" height="1.8" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="4 2.8 -18" radius="0.6" color="#013220"></a-dodecahedron>
+      <a-dodecahedron position="4 3.5 -18" radius="0.5" color="#005F2F"></a-dodecahedron>
+
+      <!-- Tree 4 (left-side border) -->
+      <a-cylinder position="-23 1.3 -8" radius="0.35" height="2.1" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-23 3.3 -8" radius="0.7" color="#013220"></a-dodecahedron>
+      <a-dodecahedron position="-23 4.1 -8" radius="0.6" color="#006400"></a-dodecahedron>
+      
+      <!-- Tree 5 (back-left corner) -->
+      <a-cylinder position="-23 1.6 -12" radius="0.3" height="2.4" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-23 4 -12" radius="0.8" color="#004C29"></a-dodecahedron>
+      <a-dodecahedron position="-23 4.8 -12" radius="0.7" color="#013220"></a-dodecahedron>
+
+      <!-- Tree 6 (back-right corner) -->
+      <a-cylinder position="4 1.2 -12" radius="0.3" height="2.2" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="4 3.5 -12" radius="0.7" color="#013220"></a-dodecahedron>
+      <a-dodecahedron position="4 4.3 -12" radius="0.6" color="#0A3D00"></a-dodecahedron>
+
+      <!-- Tree 7 (front-left) -->
+      <a-cylinder position="-10 1.3 -18" radius="0.3" height="2.1" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-10 3.3 -18" radius="0.7" color="#006400"></a-dodecahedron>
+      <a-dodecahedron position="-10 4.1 -18" radius="0.6" color="#005F2F"></a-dodecahedron>
+
+      <!-- Tree 8 (front-right) -->
+      <a-cylinder position="0 1.4 -20" radius="0.25" height="2.2" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="0 3.6 -20" radius="0.8" color="#0A3D00"></a-dodecahedron>
+      <a-dodecahedron position="0 4.4 -20" radius="0.7" color="#013220"></a-dodecahedron>
+
+      <!-- Tree 9 (near front-left corner) -->
+      <a-cylinder position="-15 1.1 -17" radius="0.25" height="1.9" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-15 3 -17" radius="0.6" color="#004C29"></a-dodecahedron>
+      <a-dodecahedron position="-15 3.7 -17" radius="0.5" color="#005F2F"></a-dodecahedron>
+
+
+      
+      <!-- Long building 1 -->
+      <a-box 
+        position="-10 5 -20" 
+        width="25" 
+        height="10" 
+        depth="5" 
+        color="#e28743" 
+        material="src: url(https://muralsyourway.vtexassets.com/arquivos/ids/238330/Seamless-Brick-Texture-Wall-Mural.jpg?v=638164451020500000)">
+      </a-box>
+      <a-box position="-9 6 -17.49" width="20" height="1.5" depth="0.1" color="#fff"
+             material="src: url(https://www.shutterstock.com/image-photo/clouds-reflected-windows-modern-office-600nw-335822954.jpg)"></a-box>
+      <a-box position="-9 8 -17.49" width="20" height="1.5" depth="0.1" color="#fff"
+             material="src: url(https://www.shutterstock.com/image-photo/clouds-reflected-windows-modern-office-600nw-335822954.jpg)"></a-box>
+      
+      <!-- Long Building 1 -->
+      <a-box 
+        position="-10 5 -20" 
+        width="25" 
+        height="10" 
+        depth="5" 
+        color="#e28743" 
+        material="src: url(https://muralsyourway.vtexassets.com/arquivos/ids/238330/Seamless-Brick-Texture-Wall-Mural.jpg?v=638164451020500000)">
+      </a-box>
+      <a-box position="-9 6 -17.49" width="20" height="1.5" depth="0.1" color="#fff"
+             material="src: url(https://www.shutterstock.com/image-photo/clouds-reflected-windows-modern-office-600nw-335822954.jpg)"></a-box>
+      <a-box position="-9 8 -17.49" width="20" height="1.5" depth="0.1" color="#fff"
+             material="src: url(https://www.shutterstock.com/image-photo/clouds-reflected-windows-modern-office-600nw-335822954.jpg)"></a-box>
+      
+      <!-- Perpendicular Building 2 (to the left) -->
+      <a-box 
+        position="-25 5 -10" 
+        rotation="0 90 0" 
+        width="25" 
+        height="10" 
+        depth="5" 
+        color="#e28743" 
+        material="src: url(https://muralsyourway.vtexassets.com/arquivos/ids/238330/Seamless-Brick-Texture-Wall-Mural.jpg?v=638164451020500000)">
+      </a-box>
+       <!-- Staircase along front of Perpendicular Building 2 -->
+    
+      <!-- Step 2 -->
+      <a-box position="-23 1.0 -7.5" width="2" height="0.2" depth="1" color="#edf4ee"></a-box>
+      <!-- Step 3 -->
+      <a-box position="-23 1.5 -8" width="2" height="0.2" depth="1" color="#edf4ee"></a-box>
+      <!-- Step 4 -->
+      <a-box position="-23 2.0 -8.5" width="2" height="0.2" depth="1" color="#edf4ee"></a-box>
+      <!-- Step 5 -->
+      <a-box position="-23 2.5 -9" width="2" height="0.2" depth="1" color="#edf4ee"></a-box>
+      <!-- Step 6 -->
+      <a-box position="-23 3.0 -9.5" width="2" height="0.2" depth="1" color="#edf4ee"></a-box>
+      <!-- Step 7 -->
+      <a-box position="-23 3.5 -10" width="2" height="0.2" depth="1" color="#edf4ee"></a-box>
+
+      <!-- Balcony towards the inside of the building -->
+      <!-- Balcony floor -->
+      <a-box position="-26 4.5 -12" width="5" height="0.2" depth="2" color="#edf4ee"></a-box>
+      <!-- Balcony railings -->
+      <a-box position="-28 5.0 -12" width="0.1" height="1" depth="2" color="#edf4ee"></a-box>
+      <a-box position="-23 5.0 -12" width="0.1" height="1" depth="2" color="#edf4ee"></a-box>
+      <a-box position="-26 5.0 -11" width="5" height="1" depth="0.1" color="#edf4ee"></a-box>
+
+          
+      <!-- Perpendicular Building 3 (to the right) -->
+      <a-box 
+        position="5 5 -20" 
+        rotation="0 90 0" 
+        width="25" 
+        height="10" 
+        depth="5" 
+        color="#e28743" 
+        material="src: url(https://muralsyourway.vtexassets.com/arquivos/ids/238330/Seamless-Brick-Texture-Wall-Mural.jpg?v=638164451020500000)">
+      </a-box>
+      <!-- Tree 1 (front-left corner) -->
+      <a-cylinder position="-8 1.2 -13" radius="0.4" height="2.5" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-8 4.0 -13" radius="1.5" color="#006400"></a-dodecahedron>
+      <a-dodecahedron position="-8 6.0 -13" radius="1.2" color="#004C29"></a-dodecahedron>
+
+      <!-- Tree 2 (front-right corner) -->
+      <a-cylinder position="4 1.5 -14" radius="0.35" height="3.0" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="4 4.8 -14" radius="1.7" color="#0A3D00"></a-dodecahedron>
+      <a-dodecahedron position="4 7.0 -14" radius="1.3" color="#013220"></a-dodecahedron>
+
+      <!-- Tree 3 (center-front) -->
+      <a-cylinder position="-2 1.0 -12" radius="0.3" height="2.5" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-2 4.0 -12" radius="1.4" color="#006400"></a-dodecahedron>
+      <a-dodecahedron position="-2 5.5 -12" radius="1.1" color="#0A3D00"></a-dodecahedron>
+
+      <!-- Tree 4 (left-front border) -->
+      <a-cylinder position="-20 1.3 -14" radius="0.45" height="2.7" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-20 4.5 -14" radius="1.6" color="#013220"></a-dodecahedron>
+      <a-dodecahedron position="-20 6.5 -14" radius="1.3" color="#006400"></a-dodecahedron>
+
+      <!-- Tree 5 (front-left near building) -->
+      <a-cylinder position="-15 1.6 -15" radius="0.4" height="3.0" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-15 5.0 -15" radius="1.5" color="#004C29"></a-dodecahedron>
+      <a-dodecahedron position="-15 7.0 -15" radius="1.3" color="#013220"></a-dodecahedron>
+
+      <!-- Tree 6 (front-right side) -->
+      <a-cylinder position="3 1.2 -15" radius="0.35" height="2.8" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="3 4.5 -15" radius="1.5" color="#006400"></a-dodecahedron>
+      <a-dodecahedron position="3 6.5 -15" radius="1.3" color="#0A3D00"></a-dodecahedron>
+
+      <!-- Tree 7 (front-left closer to the building) -->
+      <a-cylinder position="-10 1.3 -16" radius="0.35" height="2.7" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-10 4.5 -16" radius="1.4" color="#006400"></a-dodecahedron>
+      <a-dodecahedron position="-10 6.0 -16" radius="1.1" color="#005F2F"></a-dodecahedron>
+
+      <!-- Tree 8 (front-right) -->
+      <a-cylinder position="0 1.4 -18" radius="0.3" height="3.0" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="0 5.0 -18" radius="1.6" color="#0A3D00"></a-dodecahedron>
+      <a-dodecahedron position="0 7.0 -18" radius="1.3" color="#013220"></a-dodecahedron>
+
+      <!-- Tree 9 (left-center front near the corner) -->
+      <a-cylinder position="-12 1.1 -11" radius="0.3" height="2.3" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-12 4.0 -11" radius="1.3" color="#004C29"></a-dodecahedron>
+      <a-dodecahedron position="-12 5.5 -11" radius="1.1" color="#005F2F"></a-dodecahedron>
+
+      <!-- Tree 10 (front-left) -->
+      <a-cylinder position="-14 1.5 -19" radius="0.35" height="2.9" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="-14 4.8 -19" radius="1.6" color="#006400"></a-dodecahedron>
+      <a-dodecahedron position="-14 6.5 -19" radius="1.3" color="#0A3D00"></a-dodecahedron>
+
+      <!-- Tree 11 (front-right near building) -->
+      <a-cylinder position="2 1.2 -16" radius="0.3" height="2.5" color="#8B4513"></a-cylinder>
+      <a-dodecahedron position="2 4.0 -16" radius="1.5" color="#013220"></a-dodecahedron>
+      <a-dodecahedron position="2 5.5 -16" radius="1.2" color="#004C29"></a-dodecahedron>
+
+      !-- Bench seat -->
+      <a-box position="-2 1 -10" width="3" height="0.2" depth="1" color="#edf4ee"></a-box>
+
+      <!-- Bench legs -->
+      <a-box position="-3 0.5 -10.5" width="0.2" height="1" depth="0.2" color="#edf4ee"></a-box>
+      <a-box position="0 0.5 -10.5" width="0.2" height="1" depth="0.2" color="#edf4ee"></a-box>
+      <a-box position="-3 0.5 -9.5" width="0.2" height="1" depth="0.2" color="#edf4ee"></a-box>
+      <a-box position="0 0.5 -9.5" width="0.2" height="1" depth="0.2" color="#3edf4ee"></a-box>
+
+      <!-- Bench backrest -->
+      <a-box position="-2 1.5 -9.4" width="3" height="0.5" depth="0.1" color="#edf4ee"></a-box>
+      
+  
+
+        
+          
+    
+    <a-camera position="-5 2 5"></a-camera>
+
+    </a-scene>
+
+  </body>
+</html>
